@@ -1,0 +1,20 @@
+# permissions to do viewer displaypictures.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: displaypicture-viewer-role
+rules:
+- apiGroups:
+  - profile.sachinvarghese.github.io
+  resources:
+  - displaypictures
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - profile.sachinvarghese.github.io
+  resources:
+  - displaypictures/status
+  verbs:
+  - get

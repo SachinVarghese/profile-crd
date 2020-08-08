@@ -1,0 +1,7 @@
+domain: sachinvarghese.github.io
+repo: github.com/SachinVarghese/picture
+resources:
+- group: profile
+  kind: DisplayPicture
+  version: v1
+version: "2"

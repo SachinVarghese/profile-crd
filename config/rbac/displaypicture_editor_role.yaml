@@ -1,0 +1,26 @@
+# permissions to do edit displaypictures.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: displaypicture-editor-role
+rules:
+- apiGroups:
+  - profile.sachinvarghese.github.io
+  resources:
+  - displaypictures
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - profile.sachinvarghese.github.io
+  resources:
+  - displaypictures/status
+  verbs:
+  - get
+  - patch
+  - update

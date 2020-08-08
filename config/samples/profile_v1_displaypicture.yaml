@@ -1,0 +1,7 @@
+apiVersion: profile.sachinvarghese.github.io/v1
+kind: DisplayPicture
+metadata:
+  name: displaypicture-sample
+spec:
+  # Add fields here
+  src: bar
